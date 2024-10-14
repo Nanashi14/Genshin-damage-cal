@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact Damage Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1 class="rog-title">Genshin Impact Damage Calculator</h1>
+
+        <div class="input-section">
+            <label for="attack">Attack (ATK): </label>
+            <input type="number" id="attack" placeholder="Enter ATK value">
+
+            <label for="skill-multiplier">Skill Multiplier (%): </label>
+            <input type="number" id="skill-multiplier" placeholder="Skill Multiplier">
+
+            <label for="crit-rate">Crit Rate (%): </label>
+            <input type="number" id="crit-rate" placeholder="Crit Rate">
+
+            <label for="crit-damage">Crit Damage (%): </label>
+            <input type="number" id="crit-damage" placeholder="Crit Damage">
+
+            <label for="enemy-resistance">Enemy Resistance (%): </label>
+            <input type="number" id="enemy-resistance" placeholder="Enemy Resistance">
+
+            <label for="elemental-modifier">Elemental Reaction Modifier: </label>
+            <input type="number" id="elemental-modifier" placeholder="Enter Reaction Multiplier">
+
+            <button id="calculate-btn" onclick="calculateDamage()">Calculate Damage</button>
+        </div>
+
+        <div class="output-section">
+            <h2>Damage Output:</h2>
+            <p id="damage-output">0</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
